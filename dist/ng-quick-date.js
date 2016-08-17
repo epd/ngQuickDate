@@ -160,6 +160,8 @@
                   d.setHours(time[0] || 0);
                   d.setMinutes(time[1] || 0);
                   d.setSeconds(time[2] || 0);
+                  scope.datePlaceholder = $filter('date')(d, scope.dateFormat);
+                  scope.timePlaceholder = $filter('date')(d, scope.timeFormat);
                 }
                 selected = ngModelCtrl.$modelValue && d && datesAreEqual(d, ngModelCtrl.$modelValue);
                 today = datesAreEqual(d, new Date());
