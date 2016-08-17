@@ -1,11 +1,14 @@
 {
-  "name": "ng-quick-date",
+  "name": "@nvite/ng-quick-date",
   "version": "1.3.3",
   "main": "./dist/ng-quick-date.js",
   "author": "Adam Albrecht <adam.albrecht@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/adamalbrecht/ngQuickDate"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
